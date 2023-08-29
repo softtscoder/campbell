@@ -1,5 +1,5 @@
 import { createWalletClient, custom, createPublicClient, http } from 'viem'
-import { mainnet, goerli } from 'viem/chains'
+import { goerli } from 'viem/chains'
 
 declare let window: any;
 

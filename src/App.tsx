@@ -9,12 +9,12 @@ import {
   darkTheme,
   getDefaultWallets,
 } from "@rainbow-me/rainbowkit";
-import { ALCHEMY_ID, OPTIMISM_CHAIN, GOERLI_CHAIN } from "./constants/constants";
+import { ALCHEMY_ID, GOERLI_CHAIN } from "./constants/constants";
 import { publicProvider } from "wagmi/providers/public";
 import { merge } from "lodash";
 import { RecoilRoot } from "recoil";
 
-import { Home, PendingMotion, ViewBase } from "./views";
+import { ViewBase } from "./views";
 
 const { chains, provider } = configureChains(
   [GOERLI_CHAIN],

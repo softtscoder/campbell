@@ -1,23 +1,10 @@
-import { useContext, useEffect, useState } from "react";
 import {
   AppBar,
   Box,
   Toolbar,
-  IconButton,
-  Link,
-  useMediaQuery,
-  useTheme,
-  Typography,
 } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-import { NavLink } from "react-router-dom";
-
-import LeftIndentIcon from "../../assets/icons/leftindent.svg";
-import RightIndentIcon from "../../assets/icons/rightindent.svg";
-
-import { useNavigate } from "react-router-dom";
-import useResponsive from "../../hooks/useResponsive";
 import Connect from "../Connect/ConnectButton";
 
 const useStyles = makeStyles({
@@ -61,19 +48,8 @@ interface IHeader {
   handleDrawerToggle: () => void;
 }
 
-interface IMenuBoard {
-  icon: string;
-  menuTitle: string;
-  menuText: string;
-  width: string;
-  color: string;
-}
-
-
 function Header({ mobileOpen, handleDrawerToggle }: IHeader) { 
-  const isDesktop = useResponsive("up", "md");
   const classes = useStyles();
-  let navigate = useNavigate();   
 
   return (
     <AppBar position="fixed" className={classes.appBar} elevation={0}>

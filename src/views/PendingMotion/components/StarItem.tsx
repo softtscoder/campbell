@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 
 import StarIcon from "../../../assets/icons/star.png";
 import StarYellowIcon from "../../../assets/icons/star_yellow.png";
