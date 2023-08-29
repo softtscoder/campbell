@@ -25,23 +25,9 @@ function ViewBase({ children }: IViewBase) {
   return (
     <Box style={backgroundStyle}>
       <Header mobileOpen={mobileOpen} handleDrawerToggle={handleDrawerToggle} />
-      {/* <Box>
-        {!isSmallerScreen && <Drawer mobileOpen={mobileOpen} />}
-        {isSmallerScreen && (
-          <MobileDrawer
-            mobileOpen={mobileOpen}
-            handleDrawerToggle={handleDrawerToggle}
-            isSmallerScreen={isSmallerScreen}
-          />
-        )}
-      </Box>
-      <div
-        className={`${classes.content} ${!mobileOpen && classes.contentShift} ${
-          isSmallerScreen && classes.contentMobile
-        }`}
-      >
+      <Box mt='100px'>
         {children}
-      </div> */}
+      </Box>
     </Box>
   );
 }

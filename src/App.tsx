@@ -14,7 +14,7 @@ import { publicProvider } from "wagmi/providers/public";
 import { merge } from "lodash";
 import { RecoilRoot } from "recoil";
 
-import { ViewBase } from "./views";
+import { ViewBase, Home } from "./views";
 
 const { chains, provider } = configureChains(
   [GOERLI_CHAIN],
@@ -56,7 +56,7 @@ function App() {
               path="/"
               element={
                 <ViewBase>
-                  {/* <Home /> */}
+                   <Home />
                 </ViewBase>
               }
             />
