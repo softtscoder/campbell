@@ -20,7 +20,6 @@ import QRScanImage from "../../assets/icons/scan_qr.png";
 import WaitingImage from "../../assets/icons/waiting.png";
 import Connect2MetaImage from "../../assets/icons/connect_meta.png";
 import ClockImage from "../../assets/icons/clock.png";
-import { Stack } from "@mui/system";
 
 function Home() {
   const isMobile = useResponsive("down", "sm");
