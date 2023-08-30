@@ -34,7 +34,7 @@ const wagmiClient = createClient({
 
 const myTheme = merge(darkTheme(), {
   colors: {
-    accentColor: "#1D4ED8",
+    accentColor: "#fff",
   },
 } as Theme);
 
