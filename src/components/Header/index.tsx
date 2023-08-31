@@ -43,12 +43,7 @@ const useStyles = makeStyles({
   },
 });
 
-interface IHeader {
-  mobileOpen: boolean;
-  handleDrawerToggle: () => void;
-}
-
-function Header({ mobileOpen, handleDrawerToggle }: IHeader) { 
+function Header() {
   const classes = useStyles();
 
   return (
