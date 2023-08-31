@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { Box } from "@mui/material";
 import Header from "../../components/Header";
-
+import background from '../../assets/imgs/revback.webp';
 const backgroundStyle = {
   padding: "0 16px",
   display: "flex",
   minHeight: "100vh",
-  backgroundColor: "#000",
+  minWidth: '100vw',
+  backgroundImage: `url(${background})`,
   // height: "100vh",
   backgroundSize: "cover",
 };
@@ -24,7 +25,7 @@ function ViewBase({ children }: IViewBase) {
   return (
     <Box style={backgroundStyle}>
       <Header mobileOpen={mobileOpen} handleDrawerToggle={handleDrawerToggle} />
-      <Box mt='100px'>
+      <Box display='flex' justifyContent='center' alignItems='center' width='100%'>
         {children}
       </Box>
     </Box>

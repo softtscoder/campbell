@@ -1,10 +1,10 @@
 import {
   AppBar,
   Box,
-  Toolbar,
+  Toolbar, Typography,
 } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-
+import logo from '../../assets/imgs/revlogo.webp';
 import Connect from "../Connect/ConnectButton";
 
 const useStyles = makeStyles({
@@ -58,10 +58,24 @@ function Header({ mobileOpen, handleDrawerToggle }: IHeader) {
           sx={{
             display: "flex",
             flexGrow: "1",
-            justifyContent: "right",
+            justifyContent: "space-between",
             alignItems: "center",
           }}
         >
+          <Box
+            display='flex'
+            alignItems='center'
+          >
+            <Box
+              component='img'
+              src={logo}
+            />
+            <Typography
+              component='h1'
+            >
+              REVV REV SHARING DASHBOARD
+            </Typography>
+          </Box>
           <Connect />
         </Box>
       </Toolbar>

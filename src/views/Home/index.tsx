@@ -68,11 +68,10 @@ function Home() {
   return (
     <Box
       display="flex"
-      gap={10}
+      justifyContent='space-around'
       py={8}
       px={6}
       width="100%"
-      bgcolor="#000"
       sx={{ flexDirection: { xs: "column", md: "row" } }}
     >
       <Box
