@@ -6,16 +6,21 @@
   }
   .accountBtn {
     margin-right: 12px;
-    border-radius: 12px;
+    border-radius: 20px;
     background-color: rgb(162, 56, 255);
     border: none;
     color: white;
+    font-size: 16px;
+    padding: 10px 24px;
+    cursor: pointer;
+    box-shadow: 0.00px 1.00px 20px 0px rgba(125,43,196,1) ,0 1px 4px rgba(0,0,0,.6);
   }
   .networkIcon {
     border-radius: 12px;
     padding: 8px;
     background-color: rgb(162, 56, 255);
     border: none;
+    box-shadow: 0.00px 1.00px 20px 0px rgba(125,43,196,1) ,0 1px 4px rgba(0,0,0,.6);
   }
   .networkIcon img {
     width: 24px;

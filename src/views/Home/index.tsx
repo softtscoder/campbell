@@ -66,104 +66,127 @@ function Home() {
   }, []);
 
   return (
-    <Box
-      display="flex"
-      justifyContent='space-around'
-      py={8}
-      px={6}
-      width="100%"
-      sx={{ flexDirection: { xs: "column", md: "row" } }}
-    >
-      <Box
-        display="flex"
-        flexDirection="column"
-        alignItems="center"
-        borderRadius='8px'
-        bgcolor="#242625"
-        mt={2}
-        p={1.5}
-      >
+    <Box width='100%'>
+      <Box ml={6}>
         <Typography
-          variant="h4"
-          fontWeight={700}
-          fontSize={24}
-          fontFamily="Montserrat Medium"
           color='white'
+          fontSize='120px'
         >
-          Total Pool Balance:
+          REVVD UP
         </Typography>
-        <Typography variant="h6" fontWeight={400} fontSize={20} color='white' ml={1.5}>
-          {sharePoolBalance} ETH
+        <Typography
+          color='white'
+          fontSize='20px'
+          sx={{
+            mt:'-20px'
+          }}
+        >
+          REVV REV SHARING DASHBOARD
         </Typography>
       </Box>
-
       <Box
         display="flex"
-        flexDirection="column"
-        alignItems="center"
-        borderRadius='8px'
-        bgcolor="#242625"
-        mt={2}
-        p={1.5}
+        justifyContent='start'
+        py={8}
+        px={6}
+        width="100%"
+        sx={{ flexDirection: { xs: "column", md: "row" } }}
       >
-        <Typography
-          variant="h4"
-          fontWeight={700}
-          fontSize={24}
-          fontFamily="Montserrat Medium"
-          color='white'
+        <Box
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          borderRadius='8px'
+          bgcolor="#00ffc9b3"
+          mt={2}
+          mr={4}
+          p={1.5}
         >
-          Total Payout:
-        </Typography>
-        <Typography variant="h6" fontWeight={400} fontSize={20} color='white' ml={1.5}>
-          {totalPayout} ETH
-        </Typography>
-      </Box>
+          <Typography
+            variant="h4"
+            fontWeight={700}
+            fontSize={24}
+            fontFamily="Montserrat Medium"
+            color='white'
+          >
+            Total Pool Balance:
+          </Typography>
+          <Typography variant="h6" fontWeight={400} fontSize={20} color='white' ml={1.5}>
+            {sharePoolBalance} ETH
+          </Typography>
+        </Box>
 
-      <Box
-        display="flex"
-        flexDirection="column"
-        alignItems="center"
-        borderRadius='8px'
-        bgcolor="#242625"
-        mt={2}
-        p={1.5}
-      >
-        <Typography
-          variant="h4"
-          fontWeight={700}
-          fontSize={24}
-          fontFamily="Montserrat Medium"
-          color='white'
+        <Box
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          borderRadius='8px'
+          bgcolor="#686cbb"
+          mt={2}
+          mr={4}
+          p={1.5}
         >
-          Total Claim:
-        </Typography>
-        <Typography variant="h6" fontWeight={400} fontSize={20} color='white' ml={1.5}>
-          {totalClaim}
-        </Typography>
-      </Box>
+          <Typography
+            variant="h4"
+            fontWeight={700}
+            fontSize={24}
+            fontFamily="Montserrat Medium"
+            color='white'
+          >
+            Total Payout:
+          </Typography>
+          <Typography variant="h6" fontWeight={400} fontSize={20} color='white' ml={1.5}>
+            {totalPayout} ETH
+          </Typography>
+        </Box>
 
-      <Box
-        display="flex"
-        flexDirection="column"
-        alignItems="center"
-        borderRadius='8px'
-        bgcolor="#242625"
-        mt={2}
-        p={1.5}
-      >
-        <Typography
-          variant="h4"
-          fontWeight={700}
-          fontSize={24}
-          fontFamily="Montserrat Medium"
-          color='white'
+        <Box
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          borderRadius='8px'
+          bgcolor="#e6ce0470"
+          mt={2}
+          mr={4}
+          p={1.5}
         >
-          Pending Claim:
-        </Typography>
-        <Typography variant="h6" fontWeight={400} fontSize={20} color='white' ml={1.5}>
-          {pendingClaim}
-        </Typography>
+          <Typography
+            variant="h4"
+            fontWeight={700}
+            fontSize={24}
+            fontFamily="Montserrat Medium"
+            color='white'
+          >
+            Total Claim:
+          </Typography>
+          <Typography variant="h6" fontWeight={400} fontSize={20} color='white' ml={1.5}>
+            {totalClaim}
+          </Typography>
+        </Box>
+
+        <Box
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          borderRadius='8px'
+          bgcolor="#aac100"
+          mt={2}
+          mr={4}
+          p={1.5}
+        >
+          <Typography
+            variant="h4"
+            fontWeight={700}
+            fontSize={24}
+            fontFamily="Montserrat Medium"
+            color='white'
+          >
+            Pending Claim:
+          </Typography>
+          <Typography variant="h6" fontWeight={400} fontSize={20} color='white' ml={1.5}>
+            {pendingClaim}
+          </Typography>
+        </Box>
       </Box>
     </Box>
   )

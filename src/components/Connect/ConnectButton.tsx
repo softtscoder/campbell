@@ -67,6 +67,15 @@ const Connect = () => {
                     className={css.accountBtn}
                     face={PillButtonFace.SECONDARY}
                     icon={PillIcon.DOWN}
+                    href='https://app.uniswap.org/#/swap?outputCurrency=0x587bfc5ad0d8737117bc3a5354bad0f8c475bcdc'
+                    target='_blank'
+                  >
+                    <div className="address">Buy</div>
+                  </PillButton>
+                  <PillButton
+                    className={css.accountBtn}
+                    face={PillButtonFace.SECONDARY}
+                    icon={PillIcon.DOWN}
                     onClick={handleClaim}
                   >
                     <div className="address">Claim</div>

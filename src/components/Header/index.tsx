@@ -65,11 +65,6 @@ function Header() {
               component='img'
               src={logo}
             />
-            <Typography
-              component='h1'
-            >
-              REVV REV SHARING DASHBOARD
-            </Typography>
           </Box>
           <Connect />
         </Box>

@@ -5,9 +5,7 @@ const backgroundStyle = {
   padding: "0 16px",
   display: "flex",
   minHeight: "100vh",
-  minWidth: '100vw',
   backgroundImage: `url(${background})`,
-  // height: "100vh",
   backgroundSize: "cover",
 };
 
