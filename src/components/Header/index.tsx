@@ -1,7 +1,7 @@
 import {
   AppBar,
   Box,
-  Toolbar, Typography,
+  Toolbar,
 } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import logo from '../../assets/imgs/revlogo.webp';
