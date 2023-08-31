@@ -17,14 +17,9 @@ interface IViewBase {
 }
 
 function ViewBase({ children }: IViewBase) {
-  const [mobileOpen, setMobileOpen] = useState(true);
-
-  const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen);
-  };
   return (
     <Box style={backgroundStyle}>
-      <Header mobileOpen={mobileOpen} handleDrawerToggle={handleDrawerToggle} />
+      <Header/>
       <Box display='flex' justifyContent='center' alignItems='center' width='100%'>
         {children}
       </Box>
