@@ -70,18 +70,18 @@ function Home() {
       <Box ml={6}>
         <Typography
           color='white'
-          fontSize='120px'
+          fontSize='20px'
         >
-          REVVD UP
+          REVV REV SHARING DASHBOARD
         </Typography>
         <Typography
           color='white'
-          fontSize='20px'
+          fontSize='120px'
           sx={{
             mt:'-20px'
           }}
         >
-          REVV REV SHARING DASHBOARD
+          REVVD UP
         </Typography>
       </Box>
       <Box
@@ -97,7 +97,7 @@ function Home() {
           flexDirection="column"
           alignItems="center"
           borderRadius='8px'
-          bgcolor="#00ffc9b3"
+          bgcolor="#a238ff"
           mt={2}
           mr={4}
           p={1.5}
@@ -121,7 +121,7 @@ function Home() {
           flexDirection="column"
           alignItems="center"
           borderRadius='8px'
-          bgcolor="#686cbb"
+          bgcolor="rgb(138 138 149)"
           mt={2}
           mr={4}
           p={1.5}
@@ -145,7 +145,7 @@ function Home() {
           flexDirection="column"
           alignItems="center"
           borderRadius='8px'
-          bgcolor="#e6ce0470"
+          bgcolor="rgb(25, 118, 210)"
           mt={2}
           mr={4}
           p={1.5}
@@ -169,7 +169,7 @@ function Home() {
           flexDirection="column"
           alignItems="center"
           borderRadius='8px'
-          bgcolor="#aac100"
+          bgcolor="#ff6465"
           mt={2}
           mr={4}
           p={1.5}
